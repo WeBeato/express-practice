@@ -58,6 +58,7 @@ app.get('/single-blog', (req, res) => {
         .catch((err) => console.log(err));
 })
 
+
 app.get('/', (req, res) => {
     const blogs = [
         { title: 'Bahram in Journey', snippet: 'Lorem ipsum dolor sit amet consectetur.' },
