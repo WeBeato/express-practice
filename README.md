@@ -25,7 +25,3 @@ This project is structured using views, partials, and public folders to simulate
 - MongoDB
 
 - Mongoose
-
-## 🚀 Live Demo
-
-🔗 [View on GitHub Pages](https://webeato.github.io/express-practice)
