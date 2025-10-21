@@ -55,5 +55,5 @@ To start the development server:
 
 Then open your browser and visit:
     ```
-    Then open your browser and visit:
+    http://localhost:3000
     ```
