@@ -25,3 +25,35 @@ This project is structured using views, partials, and public folders to simulate
 - MongoDB
 
 - Mongoose
+
+---
+
+## ⚙️ Installation
+1. Clone this repository:
+    ```Bash
+    git clone https://github.com/WeBeato/express-practice.git
+    ```
+
+2. Navigate into the project folder:
+    ```Bash
+    cd express-practice
+    ```
+
+3. Install dependencies:
+    ```Bash
+    npm install
+    ```
+
+---
+
+## 🧩 Usage
+
+To start the development server:
+    ```Bash
+    npm start
+    ```
+
+Then open your browser and visit:
+    ```
+    Then open your browser and visit:
+    ```
