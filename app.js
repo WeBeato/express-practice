@@ -95,7 +95,7 @@ app.get('/about', (req, res) => {
 })
 
 // Blog Routes
-app.use(blogRoutes)
+app.use('/blogs',blogRoutes)
 
 // Readirect
 // app.get('/about-us', (req, res) => {
