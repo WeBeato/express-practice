@@ -24,65 +24,8 @@ app.use(express.static('public'))
 
 app.use(express.urlencoded({ extended: true }))
 
-// app.use((req, res,next) => {
-//     console.log('New Request was Made:');
-//     console.log('Host:', req.hostname);
-//     console.log('Path:', req.path);
-//     console.log('Method:', req.method);
-//     next();
-// })
+
 app.use(morgan('tiny'));
-
-
-// // adding blog
-// app.get('/add-blog', (req, res) => {
-//     const blog = new Blog({
-//         title: 'new blog 2',
-//         snippet: 'about my new blog 2',
-//         body: 'Lorem ipsum dolor sit amet consectetur.'
-//     });
-
-//     blog.save()
-//         .then((result) => res.send(result))
-//         .catch((err) => console.log(err));
-// })
-
-
-// // getting all blogs
-// app.get('/all-blogs', (req, res) => {
-//     Blog.find()
-//         .then((result) => res.send(result))
-//         .catch((err) => console.log(err));
-// })
-
-// // getting single blog
-// app.get('/single-blog', (req, res) => {
-//     Blog.findById('68f279735fb17547b89b8a1e')
-//         .then((result) => res.send(result))
-//         .catch((err) => console.log(err));
-// })
-
-
-// // deleting single blog
-// app.get('/d-single-blog', (req, res) => {
-//     Blog.findByIdAndDelete('68f694683c9aa278efcd5b3a')
-//         .then((result) => {
-//             if (result) {
-//                 res.send(`Document Deleted: \n ${result}`)
-//             } else {
-//                 res.send(`Document not found!!`)
-//             }
-//         })
-//         .catch((err) => console.log(err));
-// })
-
-
-// // deleting all blog
-// app.get('/d-all-blogs', (req, res) => {
-//     Blog.deleteMany({})
-//         .then((result) => res.send(result))
-//         .catch((err) => console.log(err));
-// })
 
 
 // Routes
@@ -96,11 +39,6 @@ app.get('/about', (req, res) => {
 
 // Blog Routes
 app.use('/blogs',blogRoutes)
-
-// Readirect
-// app.get('/about-us', (req, res) => {
-//     res.redirect('/about')
-// })
 
 // 404 Page
 app.use((req, res) => {
